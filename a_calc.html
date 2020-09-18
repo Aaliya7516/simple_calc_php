@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Local Calculator
+        </title>
+        <style>
+            #ip{
+                background: rgba(0, 132, 255, 0.1);
+                border-width: 2px;
+                width: 518px;
+                height: 75px;
+                padding: 25px;
+                margin: 10px;
+                text-align: center;
+                color: rgb(63, 75, 248);
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body style = "border-left: 10px solid rgb(0, 132, 255); background: rgba(0, 132, 255, 0.3);">
+        <div style = " padding: 25px; text-align: center;">
+            <div style = "color:rgb(63, 75, 248); font-family: 'Courier New', Courier, monospace; font-size: 30px; text-align: center;">Calculator using PHP</div>
+            <br>
+            <div>
+                <form action="http://127.0.0.1/_calc.php" method="POST">
+                    <div >
+                        <input type = "text" name = "a" id = "ip" placeholder="ENTER FIRST NUMBER">
+                        <input type = "text" name = "b" id = "ip" placeholder="ENTER SECOND NUMBER">
+                    </div>
+                    <div>
+                        <button name = "op" value = "add" style = "width: 250;" id = "ip">ADD<br>
+                        <button name = "op" value = "sub" style = "width: 250;" id = "ip">SUBTACT<br>
+                        <button name = "op" value = "mul" style = "width: 250;" id = "ip">MULTIPLY<br>
+                        <button name = "op" value = "div" style = "width: 250;" id = "ip">DIVIDE<br>
+                        <button name = "op" value = "exp" style = "width: 250;" id = "ip">EXPONENT<br>
+                        <button name = "op" value = "cct" style = "width: 250;" id = "ip">CONCATINATE<br>
+                        <button name = "op" value = "mod" style = "width: 250;" id = "ip">MODULUS<br>
+                        <button name = "op" value = "exit" style = "width: 250;" id = "ip">EXIT<br>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
